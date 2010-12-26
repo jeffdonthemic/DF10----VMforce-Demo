@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_org_medisend_mediaid_domain_Shipment" object="${shipment}" path="/shipments" z="jHY9YAHyVBlYYhhxD5uCJLfnt44=">
+        <field:display field="name" id="s_org_medisend_mediaid_domain_Shipment_name" object="${shipment}" z="/bRUfcxi52vOu4xxtl251lLIAX8="/>
+        <field:display field="country" id="s_org_medisend_mediaid_domain_Shipment_country" object="${shipment}" z="4O9hlGeefaM3pd9cmJk1a8IOuHg="/>
+        <field:display field="type" id="s_org_medisend_mediaid_domain_Shipment_type" object="${shipment}" z="dYOgnjJ79z6J9pBdpFcckOXiMmc="/>
+        <field:display field="status" id="s_org_medisend_mediaid_domain_Shipment_status" object="${shipment}" z="905vX7UOMRoGUnRvVpBE7T3urpU="/>
+        <field:display date="true" dateTimePattern="${shipment_shipdate_date_format}" field="shipDate" id="s_org_medisend_mediaid_domain_Shipment_shipDate" object="${shipment}" z="zv4IiWxObBvTbxVtdJwncmt+FMo="/>
+        <field:display field="items" id="s_org_medisend_mediaid_domain_Shipment_items" object="${shipment}" z="jsXNdSeDXtklJO/9LjglQP2xpxk="/>
+        <field:display field="selected" id="s_org_medisend_mediaid_domain_Shipment_selected" object="${shipment}" z="Pvs/hiw6+5HWy3lpyT1Ag/tB1Eg="/>
+        <field:display field="reserved" id="s_org_medisend_mediaid_domain_Shipment_reserved" object="${shipment}" z="mFAeu9qfbQxhd3MYnRoOZyU/9ws="/>
+    </page:show>
+</div>

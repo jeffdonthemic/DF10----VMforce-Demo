@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:menu="urn:jsptagdir:/WEB-INF/tags/menu" id="menu" version="2.0">
+	<jsp:output omit-xml-declaration="yes"/>
+
+<menu:menu id="_menu" z="nZaf43BjUg1iM0v70HJVEsXDopc=">
+
+    <menu:category id="c_controller" z="nj8Dm3hojIyIEyPkwE1UMDIs+K8=">
+            <menu:item id="i_controller__homeindex_id" messageCode="global_generic" url="/home/index" z="RdkJRXBjwI2iuen0Vi10ZBIeuWk="/>
+        <!-- <menu:item id="i_controller__shipmenthomeindex_id" messageCode="global_generic" url="/shipmenthome/index" z="gI8lXqqlm+NOVcBqinRGfHFq1Oc="/> -->
+        </menu:category>
+
+        <menu:category id="c_shipment" z="U7fbISl5mbUv7w3RhhG2yNd60+0=">
+            <menu:item id="i_shipment_new" messageCode="global_menu_new" url="/shipments?form" z="SYyHDrOPI8j2s0N/3uqfmmnauXI="/>
+        <menu:item id="i_shipment_list" messageCode="global_menu_list" url="/shipments?page=${empty param.page ? 1 : param.page}&amp;size=${empty param.size ? 10 : param.size}" z="s5Hg1zxJLkCPuVgBGK7nv14tymA="/>
+        </menu:category>
+
+    <menu:category id="c_inventoryitem" z="fnywkllb4elYwrYPM9nXtK97l18=">
+            <menu:item id="i_inventoryitem_new" messageCode="global_menu_new" url="/inventoryitems?form" z="R6yq60WL7lrek7k0k9HAM1IyALM="/>
+        <menu:item id="i_inventoryitem_list" messageCode="global_menu_list" url="/inventoryitems?page=${empty param.page ? 1 : param.page}&amp;size=${empty param.size ? 10 : param.size}" z="1tsU4PQGKY/+RUyPPfSv9F8QrBU="/>
+        </menu:category>
+    </menu:menu>
+</div>

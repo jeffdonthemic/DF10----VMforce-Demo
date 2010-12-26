@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" 
+		xmlns:spring="http://www.springframework.org/tags" 
+		xmlns:util="urn:jsptagdir:/WEB-INF/tags/util" 
+		xmlns:c="http://java.sun.com/jsp/jstl/core"
+		version="2.0">
+  <jsp:output omit-xml-declaration="yes"/>
+  <spring:message code="label_shipmenthome_index" var="title"/>
+  
+  <script type="text/javascript">
+  function confirmDelete() {
+	var answer = confirm("Are you sure you want to remove all items from this shipment?")
+	if (answer)
+		window.location = "/MediaidDemo2/shipmenthome/${shipment.id}/remove";
+  }
+  
+  function confirmReserve() {
+		var answer = confirm("Are you sure you want to update all of the items in this shipment as reserved?")
+		if (answer)
+			window.location = "/MediaidDemo2/shipmenthome/${shipment.id}/reserve";
+	  }
+  </script>
+  
+  <util:panel id="title" title="Shipment ${shipment.name}">
+    <spring:message code="application_name" var="app_name"/>
+    <h3>Shipment ${shipment.name}</h3>
+
+    <p>
+    Status: ${shipment.status}<br/>
+    Type: ${shipment.type}<br/>
+    Country: ${shipment.country}<br/>
+    Items: ${shipment.items}<br/>
+    Selected: ${shipment.selected}<br/>
+    Reserved: ${shipment.reserved}
+    </p>
+    
+    <p>Available options for this shipment:
+    <ol>
+    	<li><a href="/MediaidDemo2/shipmenthome/${shipment.id}/items">View items in this shipment</a></li> 
+    	<!-- <li>Search for items to add to this shipment</li> -->
+    	<li><a href="/MediaidDemo2/shipmenthome/${shipment.id}/add">Add items by product category to this shipment</a></li>
+    	<li><a href="#" onclick="return confirmReserve();">Mark all items as "reserved" for this shipment</a></li>
+    	<li><a href="#" onclick="return confirmDelete();">Remove all items from this shipment</a></li>
+    	<li><a href="/MediaidDemo2/shipmenthome/${shipment.id}/manifest">View this shipment's manifest</a></li>
+    	<!-- <li>View this shipment's history</li> -->
+    	<li><a href="/MediaidDemo2/shipmenthome/${shipment.id}/message">Send the case manager a message</a> regarding this shipment (Chatter)</li>
+    </ol>
+    </p>
+
+  </util:panel>
+</div>

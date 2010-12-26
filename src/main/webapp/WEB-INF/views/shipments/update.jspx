@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_org_medisend_mediaid_domain_Shipment" modelAttribute="shipment" path="/shipments" versionField="lastModifiedDate" z="MVHQ9oumrlegSKm/m8BvlFnGdm4=">
+        <field:input field="name" id="c_org_medisend_mediaid_domain_Shipment_name" required="true" z="KbB83bePUHdYpyjyUKEwEm5u3Zc="/>
+        <field:input field="country" id="c_org_medisend_mediaid_domain_Shipment_country" required="true" z="S/Xk5JoTNmyf1nIpU3CkS1PXrpI="/>
+        <field:input field="type" id="c_org_medisend_mediaid_domain_Shipment_type" required="true" z="/UTpwlUmjTOeGtmT02Wzp0Pu0C4="/>
+        <field:input field="status" id="c_org_medisend_mediaid_domain_Shipment_status" required="true" z="QeZm4G78YSVLG4PVfD5F/LwwNUg="/>
+        <field:datetime dateTimePattern="${shipment_shipdate_date_format}" field="shipDate" id="c_org_medisend_mediaid_domain_Shipment_shipDate" z="bCjYTqXKYG3cqTva+FpgkMHWjEo="/>
+        <field:input field="items" id="c_org_medisend_mediaid_domain_Shipment_items" validationMessageCode="field_invalid_integer" z="n7OLfkM8n//Czx8MlbDR9x7eOOw="/>
+        <field:input field="selected" id="c_org_medisend_mediaid_domain_Shipment_selected" validationMessageCode="field_invalid_integer" z="elvN70KLXmm7EvGF5L+Qc2u5pCM="/>
+        <field:input field="reserved" id="c_org_medisend_mediaid_domain_Shipment_reserved" validationMessageCode="field_invalid_integer" z="/nIN3H5qdkrVCjcte/iCZ3lgHNg="/>
+    </form:update>
+</div>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_org_medisend_mediaid_domain_InventoryItem" modelAttribute="inventoryItem" path="/inventoryitems" versionField="lastModifiedDate" z="m6RGpfIojvEh/Jr9nX0g+ixx4wM=">
+        <field:input field="name" id="c_org_medisend_mediaid_domain_InventoryItem_name" required="true" z="NbpJd6XlCWIAgdtL4XXMf5xNYrI="/>
+        <field:input field="itemNumber" id="c_org_medisend_mediaid_domain_InventoryItem_itemNumber" required="true" z="yphxbNL9DnMAnyDWLm+zDWfyxF8="/>
+        <field:input field="category" id="c_org_medisend_mediaid_domain_InventoryItem_category" required="true" z="kbZp6SV1kDgKzpCw+2P6oSecX1U="/>
+        <field:input field="status" id="c_org_medisend_mediaid_domain_InventoryItem_status" required="true" z="H2ocpZOIzTz1sfgyy7MH06oDA1M="/>
+        <field:input field="shipment" id="c_org_medisend_mediaid_domain_InventoryItem_shipment" z="kHiJ1JByPGLNS42+yXq9o6ajWi0="/>
+    </form:update>
+</div>

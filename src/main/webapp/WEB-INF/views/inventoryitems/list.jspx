@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_org_medisend_mediaid_domain_InventoryItem" items="${inventoryitems}" z="tOmM1Ci68jMrP3LgBIlhZUjUeVI=">
+        <table:table data="${inventoryitems}" id="l_org_medisend_mediaid_domain_InventoryItem" path="/inventoryitems" z="3jStpWmgJ9q9DNHCnXjgkE44BAs=">
+            <table:column id="c_org_medisend_mediaid_domain_InventoryItem_name" property="name" z="XepceusgSg4ZpGGr0AGIgodNJ6o="/>
+            <table:column id="c_org_medisend_mediaid_domain_InventoryItem_itemNumber" property="itemNumber" z="6DPDkRmb2Xc2vdJRP73+x5ugB24="/>
+            <table:column id="c_org_medisend_mediaid_domain_InventoryItem_category" property="category" z="cHR6oNsGe1DkQJmlkrmgPEsp9qE="/>
+            <table:column id="c_org_medisend_mediaid_domain_InventoryItem_status" property="status" z="4vmQbPtptUjDLtJ6s1YDKuhHzUg="/>
+            <table:column id="c_org_medisend_mediaid_domain_InventoryItem_shipment" property="shipment" z="jIUUvVdYeXoyUGPtqYNlNg0iVQ0="/>
+        </table:table>
+    </page:list>
+</div>

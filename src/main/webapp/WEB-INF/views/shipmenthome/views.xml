@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="shipmenthome/index">
+        <put-attribute name="body" value="/WEB-INF/views/shipmenthome/index.jspx"/>
+    </definition>
+    <definition extends="default" name="shipmenthome/items">
+        <put-attribute name="body" value="/WEB-INF/views/shipmenthome/items.jspx"/>
+    </definition>
+    <definition extends="default" name="shipmenthome/add">
+        <put-attribute name="body" value="/WEB-INF/views/shipmenthome/add.jspx"/>
+    </definition>
+    <definition extends="default" name="shipmenthome/manifest">
+        <put-attribute name="body" value="/WEB-INF/views/shipmenthome/manifest.jspx"/>
+    </definition>
+    <definition extends="default" name="shipmenthome/message">
+        <put-attribute name="body" value="/WEB-INF/views/shipmenthome/message.jspx"/>
+    </definition>
+</tiles-definitions>

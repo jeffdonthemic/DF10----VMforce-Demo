@@ -1,0 +1,34 @@
+// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log opened at 2010-11-26 21:43:07
+project --topLevelPackage org.medisend.mediaid --projectName MediaidDemo2 --java 6
+// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log closed at 2010-11-26 21:43:08
+// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log opened at 2010-11-26 21:43:11
+persistence setup --provider DATANUCLEUS_2 --database VMFORCE --userName jdouglas@appirio.com --password :y1v8m5{0s
+entity --class ~.domain.Shipment
+field string --fieldName name --notNull
+field string --fieldName country --notNull
+field string --fieldName type --notNull
+field string --fieldName status --notNull
+field date --fieldName shipDate --type java.util.Date
+field number --fieldName items --type java.lang.Integer 
+field number --fieldName selected --type java.lang.Integer 
+field number --fieldName reserved --type java.lang.Integer 
+controller all --package ~.web
+controller class --class ~.web.HomeController
+controller class --class ~.web.ShipmentHomeController
+entity --class ~.domain.InventoryItem
+field string --fieldName name --notNull
+field string --fieldName itemNumber --notNull
+field string --fieldName category --notNull
+field string --fieldName status --notNull
+field string --fieldName shipment
+controller all --package ~.web
+// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log closed at 2010-11-27 19:47:33
+// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log opened at 2010-11-30 16:31:39
+// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log closed at 2010-11-30 19:07:39
+// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log opened at 2010-12-03 16:07:42
+controller all --package ~.web
+controller all --package ~.web
+// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log closed at 2010-12-05 09:28:17
+// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log opened at 2010-12-08 13:46:22
+controller all --package ~.web
+// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log closed at 2010-12-08 21:29:31

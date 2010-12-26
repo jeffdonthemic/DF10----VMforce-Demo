@@ -1,0 +1,15 @@
+<aspectj>
+<aspects>
+<aspect name="org.medisend.mediaid.domain.InventoryItem_Roo_Entity"/>
+<aspect name="org.medisend.mediaid.domain.InventoryItem_Roo_JavaBean"/>
+<aspect name="org.medisend.mediaid.domain.InventoryItem_Roo_ToString"/>
+<aspect name="org.medisend.mediaid.web.ShipmentController_Roo_Controller"/>
+<aspect name="org.medisend.mediaid.web.InventoryItemController_Roo_Controller"/>
+<aspect name="org.medisend.mediaid.domain.InventoryItem_Roo_Configurable"/>
+<aspect name="org.medisend.mediaid.domain.Shipment_Roo_ToString"/>
+<aspect name="org.medisend.mediaid.domain.Shipment_Roo_Configurable"/>
+<aspect name="org.medisend.mediaid.domain.Shipment_Roo_Entity"/>
+<aspect name="org.medisend.mediaid.domain.Shipment_Roo_JavaBean"/>
+</aspects>
+</aspectj>
+
